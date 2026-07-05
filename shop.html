@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMart - Your Premium Online Grocery</title>
+    <meta name="description" content="Shop the freshest groceries online with FreshMart. Premium quality fruits, vegetables, and everyday essentials delivered to your door.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="rapido-logo.png" onerror="this.onerror=null; this.src='https://images.crunchbase.com/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/v1484033282/v4t5e2w2jxy5iueytj4t.png';" alt="Rapido Logo" style="height: 40px; border-radius: 8px;">
+            </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for fresh products..." style="border:none; outline:none; background:transparent; width: 100%; font-size: 1rem; color: var(--text-main); font-family: inherit;">
+                <button class="search-btn"><i class="fa-solid fa-search"></i></button>
+            </div>
+            <div class="nav-icons" style="display: flex; align-items: center; gap: 1.5rem;">
+                <a href="#about" class="nav-link">About Us</a>
+                <div class="cart-icon" id="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-container" style="margin-top: 2rem;">
+        <div class="section-header">
+            <h2>All Products</h2>
+            <p>Browse our complete catalog of daily essentials</p>
+        </div>
+        
+        <div class="products-grid" id="shop-grid">
+            <!-- Products injected by JS -->
+        </div>
+    </main>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="close-cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items injected by JS -->
+            <div class="empty-cart-msg">Your cart is empty.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="total-price">₹0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2>About Us</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <h3>Owner</h3>
+                    <p>Vivekanirudh</p>
+                </div>
+                <div class="about-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>Education</h3>
+                    <p>Model School Elagandal</p>
+                </div>
+                <div class="about-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Born In</h3>
+                    <p>Kottapally Karimnagar 505001</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="rapido-logo.png" onerror="this.onerror=null; this.src='https://images.crunchbase.com/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/v1484033282/v4t5e2w2jxy5iueytj4t.png';" alt="Rapido Logo" style="height: 40px; margin-bottom: 1rem; border-radius: 8px;">
+                <p>Bringing the farmer's market to your doorstep with premium quality and unmatched freshness.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#">Shop</a>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Info</a>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">Returns</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FreshMart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
